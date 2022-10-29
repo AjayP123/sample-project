@@ -1,7 +1,42 @@
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+.main-content {
+  background-color: #c6c6e0;
+  height: 100%;
+}
+.navbar {
+  background-color: 084d8d;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.navbar-brand {
+  color: white;
+  background-color: #8bbd23;
+  margin-bottom: 10px;
+}
+.circle-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.circles {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: white;
+  margin: 5px;
+  align-items: center;
+  box-shadow: 4px 4px #7481bd;
+}
+.sports {
+  display: flex;
+}
+.sports_name {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex: auto;
+  word-wrap: break-word;
+  text-align: center;
+  font-weight: bold;
+}
