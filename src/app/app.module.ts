@@ -6,24 +6,32 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ItemDirective } from './item.directive';
-
+import { RouterModule } from '@angular/router';
+import { TournamentAndTeamsComponent } from './tournamentsandteam/tournaments-teams.component';
+import { AppRoutingModule } from './app.routing.module';
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './home/home.component';
 
 // @NgModule decorator with its metadata
 @NgModule({
   declarations: [
     AppComponent,
-    ItemDirective
+    ItemDirective,
+    TournamentAndTeamsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule,
+    AppRoutingModule,
+    CommonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.
